@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Carrinho - O Boticário</title>
+    <link rel="stylesheet" href="carrinho.css">
+</head>
+<body>
+
+    <header>
+        <h2>O Boticário</h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="index.html#produtos">Produtos</a>
+            <a href="index.html#sobre">Sobre</a>
+            <a href="index.html#contato">Contato</a>
+            <a href="carrinho.html">🛒 Carrinho</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Meu Carrinho 🛒</h1>
+        <p>Confira os produtos escolhidos antes de finalizar.</p>
+
+        <div class="conteudo">
+
+            <section class="produtos">
+                <div id="lista-carrinho"></div>
+
+                <div id="carrinho-vazio">
+                    <h2>Seu carrinho está vazio</h2>
+                    <p>Escolha seus produtos favoritos!</p>
+                    <a href="index.html#produtos">
+                        Continuar comprando
+                    </a>
+                </div>
+            </section>
+
+            <section class="resumo">
+                <h2>Resumo do pedido</h2>
+
+                <p>Quantidade de produtos:
+                    <span id="quantidade">0</span>
+                </p>
+
+                <hr>
+
+                <h3>Total:
+                    <span id="total">R$ 0,00</span>
+                </h3>
+
+                <button onclick="finalizarCompra()">
+                    Finalizar pelo WhatsApp
+                </button>
+
+                <p class="aviso">
+                    Entrega e pagamento a combinar
+                    com a revendedora.
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <script src="carrinho.js"></script>
+</body>
+</html>
